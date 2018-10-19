@@ -24,9 +24,10 @@ public class Deck {
     }
 
     private void fillDeckWithAllCards() {
-        for (int i = 0; i < 4; i++) {
-            for (Card card : Card.values()) {
-                cards.push(card);
+        for (int i = 1; i <= 4; i++) {
+            for(int k = 1; i <= 13; i++){
+                Card card = new Card(i, k);
+                cards.add(card);
             }
         }
         shuffle();

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 
 public class Hand {
-    private final Queue<Card> cards = new PriorityQueue<>();
+    private final ArrayList<Card> cards = new ArrayList<>();
 
     public void addCard(Card card) {
         cards.add(card);
@@ -18,7 +18,7 @@ public class Hand {
         totals.add(0);
         for (Card card : cards) {
             for (int i = 0; i < totals.size(); i++) {
-                totals.add(i, totals.get(i) + card.getValue());
+                totals.add(i, totals.get(i) + card.getRank());
                 totals.remove(i + 1);
             }
             if (card.getRank() == 1) totals.add(totals.get(totals.size() - 1) - 10);
