@@ -3,6 +3,7 @@ package blackjack;
 public class Card {
     private final int rank;
     private final int suit;
+    private  int value;
 
     // Kinds of suits
     public final static int DIAMONDS = 1;
@@ -30,6 +31,7 @@ public class Card {
         assert isValidSuit(suit);
         this.rank = rank;
         this.suit = suit;
+        giveValue(rank);
     }
 
     public int getSuit() {
@@ -39,6 +41,10 @@ public class Card {
     public int getRank() {
         return rank;
     }
+    
+    public int getValue(){
+        return value;
+    }
 
     public static boolean isValidRank(int rank) {
         return ACE <= rank && rank <= KING;
@@ -47,7 +53,50 @@ public class Card {
     public static boolean isValidSuit(int suit) {
         return DIAMONDS <= suit && suit <= SPADES;
     }
-
+    
+    private void giveValue(int rank){
+        switch (rank) {
+        case ACE:
+            value = 1;
+            break;
+        case DEUCE:
+            value = 2;
+            break;
+        case THREE:
+            value = 3;
+            break;
+        case FOUR:
+            value = 4;
+            break;
+        case FIVE:
+            value = 5;
+            break;
+        case SIX:
+            value = 6;
+            break;
+        case SEVEN:
+            value = 7;
+            break;
+        case EIGHT:
+            value = 8;
+            break;
+        case NINE:
+            value = 9;
+            break;
+        case TEN:
+            value = 10;
+            break;
+        case JACK:
+            value = 10;
+            break;
+        case QUEEN:
+            value = 10;
+            break;
+        case KING:
+            value = 10;
+            break;
+        }
+    }
     public static String rankToString(int rank) {
         switch (rank) {
         case ACE:
@@ -83,6 +132,7 @@ public class Card {
             return null;
         }    
     }
+    
     
     public static String suitToString(int suit) {
         switch (suit) {

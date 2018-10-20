@@ -18,7 +18,7 @@ public class Hand {
         totals.add(0);
         for (Card card : cards) {
             for (int i = 0; i < totals.size(); i++) {
-                totals.add(i, totals.get(i) + card.getRank());
+                totals.add(i, totals.get(i) + card.getValue());
                 totals.remove(i + 1);
             }
             if (card.getRank() == 1) totals.add(totals.get(totals.size() - 1) - 10);
