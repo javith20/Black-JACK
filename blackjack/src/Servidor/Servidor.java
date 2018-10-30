@@ -74,7 +74,12 @@ public class Servidor {
                                 break;
                             }
                             break;
-
+                        case 3:
+                            PedirCartar();
+                            break;
+                        case 4:
+                            quedarse();
+                            break;
                         default:
 
                             break;
