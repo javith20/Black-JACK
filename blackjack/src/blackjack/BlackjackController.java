@@ -1,4 +1,5 @@
-package blackjack;
+import java.util.ArrayList;
+
 public class BlackjackController {
 
     private Blackjack blackjack;
@@ -18,11 +19,16 @@ public class BlackjackController {
     private void playOneGame() {
 
         view.welcome();
+        
         for (Player player : blackjack.getPlayers()) {
             view.showInitialHand(player);
         }
+        while(!blackjack.allPlayersStayed()){
         for (Player player : blackjack.getPlayers()) {
-            letPersonPlayItsTurns(player);
+            if(!player.stayed){
+            letPersonPlayItsTurn(player);
+            }
+        }
         }
         for (Player player : blackjack.getPlayers()) {
             view.displayTotal(player);
@@ -36,6 +42,23 @@ public class BlackjackController {
         }
     }
 
+    private void letPersonPlayItsTurn(Player player){
+    	
+            view.showHand(player);
+            view.askForTurn(player);
+            if (player.wantsToHit()) { // reads in from Scanner if 'hit'
+                blackjack.dealCard(player);
+                view.playerHit(player);
+                view.showHand(player);
+            }else {
+                view.playerStay(player);
+                player.decidedToStay();
+            }
+        
+    	
+    }
+    
+    
     private void letPersonPlayItsTurns(Player player) {
         view.showHand(player);
         while (true) {
@@ -44,6 +67,7 @@ public class BlackjackController {
                 blackjack.dealCard(player);
                 view.playerHit(player);
                 view.showHand(player);
+                
             } else { // 'stay'
                 view.playerStay(player);
                 break;

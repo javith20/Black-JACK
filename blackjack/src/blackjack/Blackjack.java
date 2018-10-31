@@ -1,4 +1,3 @@
-package blackjack;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,5 +43,16 @@ public class Blackjack {
             }
         }
         return topPlayer;
+    }
+    
+    public boolean allPlayersStayed(){
+    int total_players = players.size();
+    for(Player player: players){
+        if(player.stayed){
+            total_players -= 1;
+        }
+    }
+        return total_players == 0;
+ 
     }
 }

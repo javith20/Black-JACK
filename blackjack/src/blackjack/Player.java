@@ -1,14 +1,15 @@
-package blackjack;
 import java.util.List;
 
 public abstract class Player {
 
     private final String name;
     protected Hand hand;
+    protected boolean stayed;
 
     public Player(String name) {
         this.name = name;
         this.hand = new Hand();
+        this.stayed = false;
     }
 
     public void receiveCard(Card card) {
@@ -29,6 +30,9 @@ public abstract class Player {
     }
 
     public abstract boolean wantsToHit();
+    
+    public abstract void decidedToStay();
+    
 
     public abstract boolean wantsToPlayAgain();
 

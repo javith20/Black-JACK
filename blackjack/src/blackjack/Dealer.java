@@ -1,4 +1,3 @@
-package blackjack;
 import java.util.Random;
 
 public class Dealer extends Player {
@@ -22,5 +21,9 @@ public class Dealer extends Player {
     @Override
     public boolean wantsToPlayAgain() {
         return false;
+    }
+    
+    public  void decidedToStay(){
+        stayed = true;
     }
 }

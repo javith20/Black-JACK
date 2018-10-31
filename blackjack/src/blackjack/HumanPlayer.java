@@ -1,4 +1,3 @@
-package blackjack;
 import java.util.Scanner;
 
 public class HumanPlayer extends Player {
@@ -30,5 +29,9 @@ public class HumanPlayer extends Player {
             input = userInput.nextLine();
         }
         return input.equals(option1);
+    }
+    
+    public  void decidedToStay(){
+        stayed = true;
     }
 }

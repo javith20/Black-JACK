@@ -1,4 +1,4 @@
-package blackjack;
+
 public class ConsoleView implements BlackjackView {
 
     @Override
