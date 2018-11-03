@@ -27,39 +27,72 @@ public class ventanaInicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabelInfoInicio = new javax.swing.JLabel();
+        jLabelPalabra = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jButtonIngresarASala = new javax.swing.JButton();
+        jLabelFondoInicio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("btn");
+        jLabelInfoInicio.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 24)); // NOI18N
+        jLabelInfoInicio.setText("Verificacion de jugador para entrar a la sala!");
+        jLabelInfoInicio.setOpaque(true);
+        getContentPane().add(jLabelInfoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, -1));
+
+        jLabelPalabra.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelPalabra.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 36)); // NOI18N
+        jLabelPalabra.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelPalabra.setText("Ingresar palabra");
+        getContentPane().add(jLabelPalabra, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, 40));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 160, 40));
+
+        jButton1.setBackground(new java.awt.Color(51, 255, 255));
+        jButton1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 70, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton1)
-                .addGap(0, 349, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addContainerGap(262, Short.MAX_VALUE))
-        );
+        jButtonIngresarASala.setBackground(new java.awt.Color(51, 255, 255));
+        jButtonIngresarASala.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jButtonIngresarASala.setText("Ingresar");
+        jButtonIngresarASala.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIngresarASalaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonIngresarASala, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 510, 100, 30));
+
+        jLabelFondoInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/100823110312_66.jpg"))); // NOI18N
+        getContentPane().add(jLabelFondoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButtonIngresarASalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarASalaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonIngresarASalaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -98,5 +131,10 @@ public class ventanaInicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonIngresarASala;
+    private javax.swing.JLabel jLabelFondoInicio;
+    private javax.swing.JLabel jLabelInfoInicio;
+    private javax.swing.JLabel jLabelPalabra;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

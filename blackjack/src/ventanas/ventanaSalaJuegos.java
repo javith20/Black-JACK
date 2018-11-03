@@ -27,21 +27,143 @@ public class ventanaSalaJuegos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jButtonAvandonar = new javax.swing.JButton();
+        jLabelP1 = new javax.swing.JLabel();
+        jButtonPedir = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        P1Carta1 = new javax.swing.JLabel();
+        P1Carta2 = new javax.swing.JLabel();
+        P1Carta3 = new javax.swing.JLabel();
+        P1Carta4 = new javax.swing.JLabel();
+        P1Carta5 = new javax.swing.JLabel();
+        jLabelP2 = new javax.swing.JLabel();
+        P2Carta1 = new javax.swing.JLabel();
+        P2Carta2 = new javax.swing.JLabel();
+        P2Carta3 = new javax.swing.JLabel();
+        P2Carta4 = new javax.swing.JLabel();
+        P2Carta5 = new javax.swing.JLabel();
+        jLabelP3 = new javax.swing.JLabel();
+        P3Carta1 = new javax.swing.JLabel();
+        P3Carta2 = new javax.swing.JLabel();
+        P3Carta3 = new javax.swing.JLabel();
+        P3Carta4 = new javax.swing.JLabel();
+        P3Carta5 = new javax.swing.JLabel();
+        P2Carta6 = new javax.swing.JLabel();
+        jLabelInfoJugador = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButtonAvandonar.setBackground(new java.awt.Color(51, 255, 255));
+        jButtonAvandonar.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jButtonAvandonar.setText("Avandonar sala");
+        jButtonAvandonar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAvandonarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonAvandonar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 860, -1, -1));
+
+        jLabelP1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jLabelP1.setForeground(new java.awt.Color(255, 153, 0));
+        jLabelP1.setText("Player 1");
+        getContentPane().add(jLabelP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 780, 60, -1));
+
+        jButtonPedir.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jButtonPedir.setText("Pedir Carta");
+        jButtonPedir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPedirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonPedir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 820, 110, 30));
+
+        jButton2.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jButton2.setText("Mantener");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 860, 110, 30));
+
+        P1Carta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P1Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 200, 320));
+
+        P1Carta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P1Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, 320));
+
+        P1Carta3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P1Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 220, 320));
+
+        P1Carta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P1Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, -1, 320));
+
+        P1Carta5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P1Carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, -1, 320));
+
+        jLabelP2.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jLabelP2.setForeground(new java.awt.Color(255, 153, 0));
+        jLabelP2.setText("Player 2");
+        getContentPane().add(jLabelP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 790, 60, -1));
+
+        P2Carta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 30, 200, 320));
+
+        P2Carta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 460, -1, 320));
+
+        P2Carta3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, 220, 320));
+
+        P2Carta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, -1, 320));
+
+        P2Carta5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 490, -1, 320));
+
+        jLabelP3.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jLabelP3.setForeground(new java.awt.Color(255, 153, 0));
+        jLabelP3.setText("Player 3");
+        getContentPane().add(jLabelP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 790, 60, -1));
+
+        P3Carta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P3Carta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 450, 200, 320));
+
+        P3Carta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P3Carta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 460, -1, 320));
+
+        P3Carta3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P3Carta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 470, 220, 320));
+
+        P3Carta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P3Carta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 480, -1, 320));
+
+        P3Carta5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P3Carta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 490, -1, 320));
+
+        P2Carta6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cartas/empty.PNG"))); // NOI18N
+        getContentPane().add(P2Carta6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 450, 200, 320));
+
+        jLabelInfoJugador.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 0, 18)); // NOI18N
+        jLabelInfoJugador.setForeground(new java.awt.Color(255, 153, 0));
+        jLabelInfoJugador.setText("Eres el jugador : ");
+        getContentPane().add(jLabelInfoJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 140, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonAvandonarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAvandonarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAvandonarActionPerformed
+
+    private void jButtonPedirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPedirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPedirActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +201,28 @@ public class ventanaSalaJuegos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel P1Carta1;
+    private javax.swing.JLabel P1Carta2;
+    private javax.swing.JLabel P1Carta3;
+    private javax.swing.JLabel P1Carta4;
+    private javax.swing.JLabel P1Carta5;
+    private javax.swing.JLabel P2Carta1;
+    private javax.swing.JLabel P2Carta2;
+    private javax.swing.JLabel P2Carta3;
+    private javax.swing.JLabel P2Carta4;
+    private javax.swing.JLabel P2Carta5;
+    private javax.swing.JLabel P2Carta6;
+    private javax.swing.JLabel P3Carta1;
+    private javax.swing.JLabel P3Carta2;
+    private javax.swing.JLabel P3Carta3;
+    private javax.swing.JLabel P3Carta4;
+    private javax.swing.JLabel P3Carta5;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonAvandonar;
+    private javax.swing.JButton jButtonPedir;
+    private javax.swing.JLabel jLabelInfoJugador;
+    private javax.swing.JLabel jLabelP1;
+    private javax.swing.JLabel jLabelP2;
+    private javax.swing.JLabel jLabelP3;
     // End of variables declaration//GEN-END:variables
 }
