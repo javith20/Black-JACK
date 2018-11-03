@@ -75,10 +75,10 @@ public class Servidor {
                             }
                             break;
                         case 3:
-                            PedirCartar();
+                            //PedirCartar();
                             break;
                         case 4:
-                            quedarse();
+                            //quedarse();
                             break;
                         default:
 
