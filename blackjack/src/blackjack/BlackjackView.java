@@ -1,3 +1,5 @@
+package blackjack;
+
 public interface BlackjackView {
 
     void welcome();

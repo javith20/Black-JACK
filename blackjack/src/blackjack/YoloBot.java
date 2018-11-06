@@ -1,3 +1,6 @@
+
+package blackjack;
+
 public class YoloBot extends Player {
 
     public YoloBot(String name) {

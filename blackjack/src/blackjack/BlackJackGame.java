@@ -1,3 +1,5 @@
+package blackjack;
+
 public class BlackJackGame {
     private final Blackjack blackjack;
     private final BlackjackView view;
