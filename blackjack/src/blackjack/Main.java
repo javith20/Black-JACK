@@ -1,9 +1,6 @@
 package blackjack;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f806f6a69a044749cec1df15f85de13fcb2b0b01
 import java.util.ArrayList;
 import java.util.List;
 

@@ -3,20 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Servidor;
+package Serv;
 
+
+import java.io.Serializable; 
 /**
  *
  * @author Javith
  */
-public class mensaje {
+public class Mensaje implements Serializable {
     private int ID;
     private int intruccion;
 
-    public mensaje(int ID) {
+    public Mensaje(int ID) {
+        super();
         this.ID = ID;
     }
-
+    public Mensaje() {super();}
     public int getID() {
         return ID;
     }
@@ -29,6 +32,8 @@ public class mensaje {
         return intruccion;
     }
 
+    
+    
     public void setIntruccion(int intruccion) {
         this.intruccion = intruccion;
     }
