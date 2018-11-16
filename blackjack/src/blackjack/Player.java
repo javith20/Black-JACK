@@ -14,6 +14,10 @@ public abstract class Player {
         this.stayed = false;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void receiveCard(Card card) {
         hand.addCard(card);
     }
@@ -35,7 +39,6 @@ public abstract class Player {
     
     public abstract void decidedToStay();
     
-
     public abstract boolean wantsToPlayAgain();
 
     @Override

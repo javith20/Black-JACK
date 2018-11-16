@@ -1,6 +1,7 @@
 package blackjack;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class HumanPlayer extends Player {
 
@@ -26,11 +27,13 @@ public class HumanPlayer extends Player {
     }
 
     private boolean chooseBetweenOptions(String option1, String option2) {
-        String input = userInput.nextLine();
-        while (!(input.equals(option1) || input.equals(option2))) {
-            input = userInput.nextLine();
+         int op =-10;
+        
+       
+        while (op!=0 && op!=1 ) {
+           op=JOptionPane.showConfirmDialog(null, "¿Desea otra carta?\nSi = Otra carta\nNo = Se queda");
         }
-        return input.equals(option1);
+        return op==0;
     }
     
     public  void decidedToStay(){

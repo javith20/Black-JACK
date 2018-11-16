@@ -4,9 +4,9 @@ public interface BlackjackView {
 
     void welcome();
 
-    void showInitialHand(Player player);
+    String showInitialHand(Player player);
 
-    void showHand(Player player);
+    String showHand(Player player);
 
     void askForTurn(Player player);
 

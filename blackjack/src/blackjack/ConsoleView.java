@@ -8,16 +8,18 @@ public class ConsoleView implements BlackjackView {
     }
 
     @Override
-    public void showInitialHand(Player player) {
+    public String showInitialHand(Player player) {
         Hand hand = player.getOpenHand();
         System.out.println(player + " has " + hand + ".\n");
+        return hand.toString();
     }
 
     @Override
-    public void showHand(Player player) {
+    public String showHand(Player player) {
         Hand hand = player.getHand();
         System.out.println(player.toString() + " has " + hand.toString() + ".\n");
         System.out.println("That makes a total of " + hand.getTotal() + ".\n");
+        return hand.toString();
     }
 
     @Override
